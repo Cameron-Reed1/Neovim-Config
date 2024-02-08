@@ -8,6 +8,7 @@ local lsp_servers = {
   'gopls',
   'pylsp',
   'templ',
+  'clangd',
   'ansiblels',
   'rust_analyzer',
 }
