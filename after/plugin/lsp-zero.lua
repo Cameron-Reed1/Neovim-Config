@@ -9,6 +9,7 @@ local lsp_servers = {
   'pylsp',
   'templ',
   'clangd',
+  'glslls',
   'ansiblels',
   'rust_analyzer',
 }
