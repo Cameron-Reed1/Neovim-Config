@@ -5,6 +5,8 @@ local lsp = require('lsp-zero').preset({})
 
 lsp.on_attach(function(_, bufnr)
   lsp.default_keymaps({buffer = bufnr})
+  local bufopts = { noremap = true, silent = true, buffer = bufnr }
+  vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
 end)
 
 local lsp_config = require('lspconfig')
